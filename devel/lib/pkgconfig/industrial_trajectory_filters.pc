@@ -1,0 +1,8 @@
+prefix=/home/magor/ws_cyton/devel
+
+Name: industrial_trajectory_filters
+Description: Description of industrial_trajectory_filters
+Version: 0.3.4
+Cflags: -I/home/magor/ws_cyton/src/industrial_core-indigo-devel/industrial_trajectory_filters/include
+Libs: -L${prefix}/lib -lindustrial_trajectory_filters
+Requires: moveit_ros_planning trajectory_msgs
