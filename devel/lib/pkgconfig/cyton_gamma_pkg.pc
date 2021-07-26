@@ -1,0 +1,8 @@
+prefix=/home/magor/ws_cyton/devel
+
+Name: cyton_gamma_pkg
+Description: Description of cyton_gamma_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
