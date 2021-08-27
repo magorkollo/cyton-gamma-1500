@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/magor/ws_cyton/src
-# Build directory: /home/magor/ws_cyton/build
+# Source directory: /home/magor/cyton-gamma-1500/src
+# Build directory: /home/magor/cyton-gamma-1500/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

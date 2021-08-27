@@ -1,4 +1,4 @@
-prefix=/home/magor/ws_cyton/install
+prefix=/home/magor/cyton-gamma-1500/install
 
 Name: dynamixel_controllers
 Description: Description of dynamixel_controllers

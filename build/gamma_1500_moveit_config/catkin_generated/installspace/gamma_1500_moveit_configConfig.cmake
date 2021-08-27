@@ -67,14 +67,14 @@ set(gamma_1500_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(gamma_1500_moveit_config_SOURCE_PREFIX /home/magor/ws_cyton/src/gamma_1500_moveit_config)
-  set(gamma_1500_moveit_config_DEVEL_PREFIX /home/magor/ws_cyton/devel)
+  set(gamma_1500_moveit_config_SOURCE_PREFIX /home/magor/cyton-gamma-1500/src/gamma_1500_moveit_config)
+  set(gamma_1500_moveit_config_DEVEL_PREFIX /home/magor/cyton-gamma-1500/devel)
   set(gamma_1500_moveit_config_INSTALL_PREFIX "")
   set(gamma_1500_moveit_config_PREFIX ${gamma_1500_moveit_config_DEVEL_PREFIX})
 else()
   set(gamma_1500_moveit_config_SOURCE_PREFIX "")
   set(gamma_1500_moveit_config_DEVEL_PREFIX "")
-  set(gamma_1500_moveit_config_INSTALL_PREFIX /home/magor/ws_cyton/install)
+  set(gamma_1500_moveit_config_INSTALL_PREFIX /home/magor/cyton-gamma-1500/install)
   set(gamma_1500_moveit_config_PREFIX ${gamma_1500_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/magor/ws_cyton/install/lib;/home/magor/ws_moveit/devel/lib;/home/magor/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/magor/cyton-gamma-1500/install/lib;/home/magor/ws_moveit/devel/lib;/home/magor/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

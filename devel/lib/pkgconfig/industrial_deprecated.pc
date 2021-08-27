@@ -1,8 +1,0 @@
-prefix=/home/magor/ws_cyton/devel
-
-Name: industrial_deprecated
-Description: Description of industrial_deprecated
-Version: 0.3.4
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

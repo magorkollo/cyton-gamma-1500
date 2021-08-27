@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magor/ws_cyton/src
+CMAKE_SOURCE_DIR = /home/magor/cyton-gamma-1500/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
+CMAKE_BINARY_DIR = /home/magor/cyton-gamma-1500/build
 
 # Utility rule file for _dynamixel_msgs_generate_messages_check_deps_MotorState.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
 include dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/progress.make
 
 dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState:
-	cd /home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dynamixel_msgs /home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_msgs/msg/MotorState.msg 
+	cd /home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dynamixel_msgs /home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_msgs/msg/MotorState.msg 
 
 _dynamixel_msgs_generate_messages_check_deps_MotorState: dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState
 _dynamixel_msgs_generate_messages_check_deps_MotorState: dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/build.make
@@ -67,10 +67,10 @@ dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messag
 .PHONY : dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/build
 
 dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/clean:
-	cd /home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/cmake_clean.cmake
+	cd /home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/cmake_clean.cmake
 .PHONY : dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/clean
 
 dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/depend:
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/ws_cyton/src /home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_msgs /home/magor/ws_cyton/build /home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_msgs /home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/cyton-gamma-1500/src /home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_msgs /home/magor/cyton-gamma-1500/build /home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_msgs /home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/depend
 

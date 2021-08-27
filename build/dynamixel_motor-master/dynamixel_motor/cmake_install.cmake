@@ -1,8 +1,8 @@
-# Install script for directory: /home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_motor
+# Install script for directory: /home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_motor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magor/ws_cyton/install")
+  set(CMAKE_INSTALL_PREFIX "/home/magor/cyton-gamma-1500/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_motor" TYPE FILE FILES "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_motor/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_motor" TYPE FILE FILES "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_motor/package.xml")
 endif()
 

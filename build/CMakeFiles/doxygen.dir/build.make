@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magor/ws_cyton/src
+CMAKE_SOURCE_DIR = /home/magor/cyton-gamma-1500/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
+CMAKE_BINARY_DIR = /home/magor/cyton-gamma-1500/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/ws_cyton/src /home/magor/ws_cyton/src /home/magor/ws_cyton/build /home/magor/ws_cyton/build /home/magor/ws_cyton/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/cyton-gamma-1500/src /home/magor/cyton-gamma-1500/src /home/magor/cyton-gamma-1500/build /home/magor/cyton-gamma-1500/build /home/magor/cyton-gamma-1500/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

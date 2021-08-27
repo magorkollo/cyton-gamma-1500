@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "rospy;diagnostic_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "dynamixel_driver"
-PROJECT_SPACE_DIR = "/home/magor/ws_cyton/install"
+PROJECT_SPACE_DIR = "/home/magor/cyton-gamma-1500/install"
 PROJECT_VERSION = "0.4.0"

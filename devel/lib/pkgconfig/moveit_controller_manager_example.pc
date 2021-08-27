@@ -1,8 +1,0 @@
-prefix=/home/magor/ws_cyton/devel
-
-Name: moveit_controller_manager_example
-Description: Description of moveit_controller_manager_example
-Version: 0.5.6
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: moveit_core

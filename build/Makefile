@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magor/ws_cyton/src
+CMAKE_SOURCE_DIR = /home/magor/cyton-gamma-1500/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
+CMAKE_BINARY_DIR = /home/magor/cyton-gamma-1500/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/ws_cyton/build/CMakeFiles /home/magor/ws_cyton/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/cyton-gamma-1500/build/CMakeFiles /home/magor/cyton-gamma-1500/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/ws_cyton/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/cyton-gamma-1500/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -337,45 +337,6 @@ dynamixel_controllers_gennodejs/fast:
 .PHONY : dynamixel_controllers_gennodejs/fast
 
 #=============================================================================
-# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
-
-# Build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast
-
-#=============================================================================
-# Target rules for targets named dynamixel_controllers_generate_messages_cpp
-
-# Build rule for target.
-dynamixel_controllers_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_cpp
-.PHONY : dynamixel_controllers_generate_messages_cpp
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_cpp/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
-.PHONY : dynamixel_controllers_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named dynamixel_controllers_genlisp
-
-# Build rule for target.
-dynamixel_controllers_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_genlisp
-.PHONY : dynamixel_controllers_genlisp
-
-# fast build rule for target.
-dynamixel_controllers_genlisp/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
-.PHONY : dynamixel_controllers_genlisp/fast
-
-#=============================================================================
 # Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_StopController
 
 # Build rule for target.
@@ -402,69 +363,17 @@ _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast:
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast
 
 #=============================================================================
-# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
 
 # Build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
 
 # fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
-
-#=============================================================================
-# Target rules for targets named dynamixel_controllers_generate_messages_lisp
-
-# Build rule for target.
-dynamixel_controllers_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_lisp
-.PHONY : dynamixel_controllers_generate_messages_lisp
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_lisp/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
-.PHONY : dynamixel_controllers_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamixel_controllers_generate_messages_nodejs
-
-# Build rule for target.
-dynamixel_controllers_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_nodejs
-.PHONY : dynamixel_controllers_generate_messages_nodejs
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_nodejs/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
-.PHONY : dynamixel_controllers_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
-
-# Build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast
-
-#=============================================================================
-# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_StartController
-
-# Build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_StartController
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast
 
 #=============================================================================
 # Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_RestartController
@@ -517,6 +426,97 @@ dynamixel_controllers_generate_messages_eus: cmake_check_build_system
 dynamixel_controllers_generate_messages_eus/fast:
 	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
 .PHONY : dynamixel_controllers_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dynamixel_controllers_generate_messages_nodejs
+
+# Build rule for target.
+dynamixel_controllers_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_nodejs
+.PHONY : dynamixel_controllers_generate_messages_nodejs
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_nodejs/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
+.PHONY : dynamixel_controllers_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_StartController
+
+# Build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_StartController
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
+
+#=============================================================================
+# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+
+# Build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast
+
+#=============================================================================
+# Target rules for targets named dynamixel_controllers_generate_messages_lisp
+
+# Build rule for target.
+dynamixel_controllers_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_lisp
+.PHONY : dynamixel_controllers_generate_messages_lisp
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_lisp/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
+.PHONY : dynamixel_controllers_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+
+# Build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
+
+#=============================================================================
+# Target rules for targets named dynamixel_controllers_generate_messages_cpp
+
+# Build rule for target.
+dynamixel_controllers_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_generate_messages_cpp
+.PHONY : dynamixel_controllers_generate_messages_cpp
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_cpp/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
+.PHONY : dynamixel_controllers_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamixel_controllers_genlisp
+
+# Build rule for target.
+dynamixel_controllers_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_controllers_genlisp
+.PHONY : dynamixel_controllers_genlisp
+
+# fast build rule for target.
+dynamixel_controllers_genlisp/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
+.PHONY : dynamixel_controllers_genlisp/fast
 
 #=============================================================================
 # Target rules for targets named dynamixel_controllers_generate_messages
@@ -662,19 +662,6 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named _dynamixel_msgs_generate_messages_check_deps_JointState
-
-# Build rule for target.
-_dynamixel_msgs_generate_messages_check_deps_JointState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_msgs_generate_messages_check_deps_JointState
-.PHONY : _dynamixel_msgs_generate_messages_check_deps_JointState
-
-# fast build rule for target.
-_dynamixel_msgs_generate_messages_check_deps_JointState/fast:
-	$(MAKE) -f dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build.make dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build
-.PHONY : _dynamixel_msgs_generate_messages_check_deps_JointState/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -699,6 +686,19 @@ _dynamixel_msgs_generate_messages_check_deps_MotorStateList: cmake_check_build_s
 _dynamixel_msgs_generate_messages_check_deps_MotorStateList/fast:
 	$(MAKE) -f dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/build.make dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/build
 .PHONY : _dynamixel_msgs_generate_messages_check_deps_MotorStateList/fast
+
+#=============================================================================
+# Target rules for targets named _dynamixel_msgs_generate_messages_check_deps_JointState
+
+# Build rule for target.
+_dynamixel_msgs_generate_messages_check_deps_JointState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dynamixel_msgs_generate_messages_check_deps_JointState
+.PHONY : _dynamixel_msgs_generate_messages_check_deps_JointState
+
+# fast build rule for target.
+_dynamixel_msgs_generate_messages_check_deps_JointState/fast:
+	$(MAKE) -f dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build.make dynamixel_motor-master/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build
+.PHONY : _dynamixel_msgs_generate_messages_check_deps_JointState/fast
 
 #=============================================================================
 # Target rules for targets named dynamixel_msgs_genpy
@@ -869,20 +869,20 @@ help:
 	@echo "... dynamixel_controllers_genpy"
 	@echo "... dynamixel_controllers_generate_messages_py"
 	@echo "... dynamixel_controllers_gennodejs"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
-	@echo "... dynamixel_controllers_generate_messages_cpp"
-	@echo "... dynamixel_controllers_genlisp"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_StopController"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_TorqueEnable"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
-	@echo "... dynamixel_controllers_generate_messages_lisp"
-	@echo "... dynamixel_controllers_generate_messages_nodejs"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_StartController"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_RestartController"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetSpeed"
 	@echo "... dynamixel_controllers_generate_messages_eus"
+	@echo "... dynamixel_controllers_generate_messages_nodejs"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_StartController"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
+	@echo "... dynamixel_controllers_generate_messages_lisp"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
+	@echo "... dynamixel_controllers_generate_messages_cpp"
+	@echo "... dynamixel_controllers_genlisp"
 	@echo "... dynamixel_controllers_generate_messages"
 	@echo "... dynamixel_controllers_gencpp"
 	@echo "... dynamixel_controllers_geneus"
@@ -894,9 +894,9 @@ help:
 	@echo "... dynamixel_msgs_gennodejs"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... _dynamixel_msgs_generate_messages_check_deps_JointState"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... _dynamixel_msgs_generate_messages_check_deps_MotorStateList"
+	@echo "... _dynamixel_msgs_generate_messages_check_deps_JointState"
 	@echo "... dynamixel_msgs_genpy"
 	@echo "... dynamixel_msgs_gencpp"
 	@echo "... dynamixel_msgs_geneus"

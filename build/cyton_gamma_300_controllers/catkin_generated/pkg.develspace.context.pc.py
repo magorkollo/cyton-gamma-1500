@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "cyton_gamma_300_controllers"
-PROJECT_SPACE_DIR = "/home/magor/ws_cyton/devel"
+PROJECT_SPACE_DIR = "/home/magor/cyton-gamma-1500/devel"
 PROJECT_VERSION = "0.0.0"

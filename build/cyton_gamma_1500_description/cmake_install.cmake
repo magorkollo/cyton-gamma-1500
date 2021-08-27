@@ -1,8 +1,8 @@
-# Install script for directory: /home/magor/ws_cyton/src/cyton_gamma_1500_description
+# Install script for directory: /home/magor/cyton-gamma-1500/src/cyton_gamma_1500_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magor/ws_cyton/install")
+  set(CMAKE_INSTALL_PREFIX "/home/magor/cyton-gamma-1500/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/ws_cyton/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/cyton-gamma-1500/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_1500_description/cmake" TYPE FILE FILES
-    "/home/magor/ws_cyton/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_descriptionConfig.cmake"
-    "/home/magor/ws_cyton/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_descriptionConfig-version.cmake"
+    "/home/magor/cyton-gamma-1500/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_descriptionConfig.cmake"
+    "/home/magor/cyton-gamma-1500/build/cyton_gamma_1500_description/catkin_generated/installspace/cyton_gamma_1500_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_1500_description" TYPE FILE FILES "/home/magor/ws_cyton/src/cyton_gamma_1500_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_1500_description" TYPE FILE FILES "/home/magor/cyton-gamma-1500/src/cyton_gamma_1500_description/package.xml")
 endif()
 

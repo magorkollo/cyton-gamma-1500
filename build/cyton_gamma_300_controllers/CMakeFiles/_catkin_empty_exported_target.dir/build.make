@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magor/ws_cyton/src
+CMAKE_SOURCE_DIR = /home/magor/cyton-gamma-1500/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
+CMAKE_BINARY_DIR = /home/magor/cyton-gamma-1500/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/build: 
 .PHONY : cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/magor/ws_cyton/build/cyton_gamma_300_controllers && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/ws_cyton/src /home/magor/ws_cyton/src/cyton_gamma_300_controllers /home/magor/ws_cyton/build /home/magor/ws_cyton/build/cyton_gamma_300_controllers /home/magor/ws_cyton/build/cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magor/cyton-gamma-1500/src /home/magor/cyton-gamma-1500/src/cyton_gamma_300_controllers /home/magor/cyton-gamma-1500/build /home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers /home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cyton_gamma_300_controllers/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

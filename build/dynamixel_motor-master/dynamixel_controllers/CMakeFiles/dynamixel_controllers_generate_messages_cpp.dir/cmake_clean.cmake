@@ -1,14 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_controllers_generate_messages_cpp"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/TorqueEnable.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/SetCompliancePunch.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/SetComplianceSlope.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/SetTorqueLimit.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/StopController.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/SetSpeed.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/StartController.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/RestartController.h"
-  "/home/magor/ws_cyton/devel/include/dynamixel_controllers/SetComplianceMargin.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/SetComplianceMargin.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/SetComplianceSlope.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/SetTorqueLimit.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/TorqueEnable.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/StopController.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/RestartController.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/StartController.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/SetSpeed.h"
+  "/home/magor/cyton-gamma-1500/devel/include/dynamixel_controllers/SetCompliancePunch.h"
 )
 
 # Per-language clean rules from dependency scanning.

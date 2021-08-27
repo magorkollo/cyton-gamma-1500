@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/magor/ws_cyton/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/magor/ws_cyton/build/gtest/googlemock/gtest/src -lpthread 
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/magor/cyton-gamma-1500/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/magor/cyton-gamma-1500/build/gtest/googlemock/gtest/src -lpthread 

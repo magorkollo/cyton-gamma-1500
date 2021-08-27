@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magor/ws_cyton/src
+CMAKE_SOURCE_DIR = /home/magor/cyton-gamma-1500/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magor/ws_cyton/build
+CMAKE_BINARY_DIR = /home/magor/cyton-gamma-1500/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,18 +79,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -113,17 +101,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -135,16 +112,39 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/magor/ws_cyton/build/CMakeFiles /home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_controllers/CMakeFiles/progress.marks
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/ws_cyton/build/CMakeFiles 0
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/magor/cyton-gamma-1500/build/CMakeFiles /home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_controllers/CMakeFiles/progress.marks
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/magor/cyton-gamma-1500/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/clean
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/preinstall
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/preinstall
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ dynamixel_controllers_genpy: dynamixel_motor-master/dynamixel_controllers/CMakeF
 
 # fast build rule for target.
 dynamixel_controllers_genpy/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build
 .PHONY : dynamixel_controllers_genpy/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ dynamixel_controllers_generate_messages_py: dynamixel_motor-master/dynamixel_con
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_py/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build
 .PHONY : dynamixel_controllers_generate_messages_py/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -209,57 +209,12 @@ dynamixel_controllers_gennodejs: dynamixel_motor-master/dynamixel_controllers/CM
 
 # fast build rule for target.
 dynamixel_controllers_gennodejs/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build
 .PHONY : dynamixel_controllers_gennodejs/fast
 
 # Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_generate_messages_cpp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
-
-.PHONY : dynamixel_controllers_generate_messages_cpp
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_cpp/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
-.PHONY : dynamixel_controllers_generate_messages_cpp/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_genlisp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
-
-.PHONY : dynamixel_controllers_genlisp
-
-# fast build rule for target.
-dynamixel_controllers_genlisp/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
-.PHONY : dynamixel_controllers_genlisp/fast
-
-# Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
 
 # Convenience name for target.
@@ -269,12 +224,12 @@ _dynamixel_controllers_generate_messages_check_deps_StopController: dynamixel_mo
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_StopController/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
 
 # Convenience name for target.
@@ -284,87 +239,27 @@ _dynamixel_controllers_generate_messages_check_deps_TorqueEnable: dynamixel_moto
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast
 
 # Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
 
 # Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
 
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
 
 # fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_generate_messages_lisp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
-
-.PHONY : dynamixel_controllers_generate_messages_lisp
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_lisp/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
-.PHONY : dynamixel_controllers_generate_messages_lisp/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_generate_messages_nodejs: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
-
-.PHONY : dynamixel_controllers_generate_messages_nodejs
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages_nodejs/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
-.PHONY : dynamixel_controllers_generate_messages_nodejs/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast
-
-# Convenience name for target.
-dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
 
 # Convenience name for target.
@@ -374,12 +269,12 @@ _dynamixel_controllers_generate_messages_check_deps_RestartController: dynamixel
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_RestartController/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_RestartController/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
 
 # Convenience name for target.
@@ -389,12 +284,12 @@ _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin: dynamix
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
 
 # Convenience name for target.
@@ -404,12 +299,12 @@ _dynamixel_controllers_generate_messages_check_deps_SetSpeed: dynamixel_motor-ma
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -419,12 +314,117 @@ dynamixel_controllers_generate_messages_eus: dynamixel_motor-master/dynamixel_co
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_eus/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
 .PHONY : dynamixel_controllers_generate_messages_eus/fast
 
 # Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_generate_messages_nodejs: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamixel_controllers_generate_messages_nodejs
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_nodejs/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
+.PHONY : dynamixel_controllers_generate_messages_nodejs/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_generate_messages_lisp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
+
+.PHONY : dynamixel_controllers_generate_messages_lisp
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_lisp/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
+.PHONY : dynamixel_controllers_generate_messages_lisp/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_generate_messages_cpp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
+
+.PHONY : dynamixel_controllers_generate_messages_cpp
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages_cpp/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
+.PHONY : dynamixel_controllers_generate_messages_cpp/fast
+
+# Convenience name for target.
+dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
+.PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_genlisp: dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
+
+.PHONY : dynamixel_controllers_genlisp
+
+# fast build rule for target.
+dynamixel_controllers_genlisp/fast:
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
+.PHONY : dynamixel_controllers_genlisp/fast
+
+# Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ dynamixel_controllers_generate_messages: dynamixel_motor-master/dynamixel_contro
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build
 .PHONY : dynamixel_controllers_generate_messages/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ dynamixel_controllers_gencpp: dynamixel_motor-master/dynamixel_controllers/CMake
 
 # fast build rule for target.
 dynamixel_controllers_gencpp/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build
 .PHONY : dynamixel_controllers_gencpp/fast
 
 # Convenience name for target.
 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
 .PHONY : dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
 
 # Convenience name for target.
@@ -464,7 +464,7 @@ dynamixel_controllers_geneus: dynamixel_motor-master/dynamixel_controllers/CMake
 
 # fast build rule for target.
 dynamixel_controllers_geneus/fast:
-	cd /home/magor/ws_cyton/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build
+	cd /home/magor/cyton-gamma-1500/build && $(MAKE) -f dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor-master/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build
 .PHONY : dynamixel_controllers_geneus/fast
 
 # Help Target
@@ -478,25 +478,25 @@ help:
 	@echo "... dynamixel_controllers_genpy"
 	@echo "... dynamixel_controllers_generate_messages_py"
 	@echo "... dynamixel_controllers_gennodejs"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
-	@echo "... install/local"
-	@echo "... dynamixel_controllers_generate_messages_cpp"
-	@echo "... dynamixel_controllers_genlisp"
 	@echo "... install/strip"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_StopController"
 	@echo "... list_install_components"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_TorqueEnable"
-	@echo "... test"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
-	@echo "... dynamixel_controllers_generate_messages_lisp"
-	@echo "... dynamixel_controllers_generate_messages_nodejs"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_StartController"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
 	@echo "... rebuild_cache"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_RestartController"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetSpeed"
 	@echo "... dynamixel_controllers_generate_messages_eus"
+	@echo "... dynamixel_controllers_generate_messages_nodejs"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_StartController"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
+	@echo "... test"
+	@echo "... dynamixel_controllers_generate_messages_lisp"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
+	@echo "... install/local"
+	@echo "... dynamixel_controllers_generate_messages_cpp"
+	@echo "... dynamixel_controllers_genlisp"
 	@echo "... dynamixel_controllers_generate_messages"
 	@echo "... dynamixel_controllers_gencpp"
 	@echo "... dynamixel_controllers_geneus"
@@ -511,6 +511,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/magor/ws_cyton/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/magor/cyton-gamma-1500/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/magor/ws_cyton/src/cyton_gamma_300_controllers
+# Install script for directory: /home/magor/cyton-gamma-1500/src/cyton_gamma_300_controllers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magor/ws_cyton/install")
+  set(CMAKE_INSTALL_PREFIX "/home/magor/cyton-gamma-1500/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/ws_cyton/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllers.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllers.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_300_controllers/cmake" TYPE FILE FILES
-    "/home/magor/ws_cyton/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllersConfig.cmake"
-    "/home/magor/ws_cyton/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllersConfig-version.cmake"
+    "/home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllersConfig.cmake"
+    "/home/magor/cyton-gamma-1500/build/cyton_gamma_300_controllers/catkin_generated/installspace/cyton_gamma_300_controllersConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_300_controllers" TYPE FILE FILES "/home/magor/ws_cyton/src/cyton_gamma_300_controllers/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cyton_gamma_300_controllers" TYPE FILE FILES "/home/magor/cyton-gamma-1500/src/cyton_gamma_300_controllers/package.xml")
 endif()
 

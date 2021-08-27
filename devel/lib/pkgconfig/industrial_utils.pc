@@ -1,8 +1,0 @@
-prefix=/home/magor/ws_cyton/devel
-
-Name: industrial_utils
-Description: Description of industrial_utils
-Version: 0.3.4
-Cflags: -I/home/magor/ws_cyton/src/industrial_core-indigo-devel/industrial_utils/include
-Libs: -L${prefix}/lib -lindustrial_utils
-Requires: roscpp urdf

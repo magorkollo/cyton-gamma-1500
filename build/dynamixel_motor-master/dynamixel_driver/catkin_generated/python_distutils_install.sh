@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_driver"
+echo_and_run cd "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_driver"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/magor/ws_cyton/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/magor/cyton-gamma-1500/install/lib/python2.7/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/magor/ws_cyton/install/lib/python2.7/dist-packages:/home/magor/ws_cyton/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/magor/ws_cyton/build" \
+    PYTHONPATH="/home/magor/cyton-gamma-1500/install/lib/python2.7/dist-packages:/home/magor/cyton-gamma-1500/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/magor/cyton-gamma-1500/build" \
     "/usr/bin/python2" \
-    "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_driver/setup.py" \
+    "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_driver/setup.py" \
      \
-    build --build-base "/home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_driver" \
+    build --build-base "/home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_driver" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/magor/ws_cyton/install" --install-scripts="/home/magor/ws_cyton/install/bin"
+    --install-layout=deb --prefix="/home/magor/cyton-gamma-1500/install" --install-scripts="/home/magor/cyton-gamma-1500/install/bin"

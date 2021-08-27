@@ -7,10 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/magor/ws_cyton/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/magor/ws_cyton/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/magor/ws_cyton/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/magor/ws_cyton/build'
-export PYTHONPATH="/home/magor/ws_cyton/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/magor/ws_cyton/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/magor/ws_cyton/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/magor/cyton-gamma-1500/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/magor/cyton-gamma-1500/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/magor/cyton-gamma-1500/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/magor/cyton-gamma-1500/build'
+export PYTHONPATH="/home/magor/cyton-gamma-1500/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/magor/cyton-gamma-1500/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/magor/cyton-gamma-1500/src:$ROS_PACKAGE_PATH"

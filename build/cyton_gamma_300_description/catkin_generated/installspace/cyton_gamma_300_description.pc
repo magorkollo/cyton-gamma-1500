@@ -1,4 +1,4 @@
-prefix=/home/magor/ws_cyton/install
+prefix=/home/magor/cyton-gamma-1500/install
 
 Name: cyton_gamma_300_description
 Description: Description of cyton_gamma_300_description

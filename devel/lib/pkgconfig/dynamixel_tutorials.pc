@@ -1,4 +1,4 @@
-prefix=/home/magor/ws_cyton/devel
+prefix=/home/magor/cyton-gamma-1500/devel
 
 Name: dynamixel_tutorials
 Description: Description of dynamixel_tutorials

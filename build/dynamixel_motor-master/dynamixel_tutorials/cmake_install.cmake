@@ -1,8 +1,8 @@
-# Install script for directory: /home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_tutorials
+# Install script for directory: /home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_tutorials
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magor/ws_cyton/install")
+  set(CMAKE_INSTALL_PREFIX "/home/magor/cyton-gamma-1500/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorials.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorials.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials/cmake" TYPE FILE FILES
-    "/home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig.cmake"
-    "/home/magor/ws_cyton/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig-version.cmake"
+    "/home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig.cmake"
+    "/home/magor/cyton-gamma-1500/build/dynamixel_motor-master/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE FILE FILES "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_tutorials/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE FILE FILES "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_tutorials/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_tutorials/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_tutorials/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/magor/ws_cyton/src/dynamixel_motor-master/dynamixel_tutorials/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/magor/cyton-gamma-1500/src/dynamixel_motor-master/dynamixel_tutorials/config")
 endif()
 

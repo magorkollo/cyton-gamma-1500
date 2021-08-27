@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_msgs_generate_messages_eus"
-  "/home/magor/ws_cyton/devel/share/roseus/ros/dynamixel_msgs/msg/MotorState.l"
-  "/home/magor/ws_cyton/devel/share/roseus/ros/dynamixel_msgs/msg/JointState.l"
-  "/home/magor/ws_cyton/devel/share/roseus/ros/dynamixel_msgs/msg/MotorStateList.l"
-  "/home/magor/ws_cyton/devel/share/roseus/ros/dynamixel_msgs/manifest.l"
+  "/home/magor/cyton-gamma-1500/devel/share/roseus/ros/dynamixel_msgs/msg/MotorStateList.l"
+  "/home/magor/cyton-gamma-1500/devel/share/roseus/ros/dynamixel_msgs/msg/MotorState.l"
+  "/home/magor/cyton-gamma-1500/devel/share/roseus/ros/dynamixel_msgs/msg/JointState.l"
+  "/home/magor/cyton-gamma-1500/devel/share/roseus/ros/dynamixel_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.
